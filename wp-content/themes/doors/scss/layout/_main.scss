@@ -1,0 +1,23 @@
+// Non-modular or client styles for the .l-content region.
+  
+.l-main {}
+
+.node {}
+.body {}
+.image {}
+.breadcrumb {}
+.single-post {
+  .l-main {
+    &> div {
+      margin-top: 40px;
+    }
+    .sidebar {
+      h2 {
+        margin-top: 0;
+      }
+      &> section  {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

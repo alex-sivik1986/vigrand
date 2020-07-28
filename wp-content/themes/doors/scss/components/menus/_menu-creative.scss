@@ -1,0 +1,119 @@
+section.creative {
+  top: 25px;
+  .has-dropdown > a::after {
+    top: 20px;
+  }
+	#menu-menu {
+		@media #{$small-up} {
+			margin-top: 0;
+			background-color: #FFF;
+		}
+		@media #{$medium-up} {
+			margin-top: 26px;
+			background-color: transparent;
+		}
+	}
+	.menu-item {
+		@media #{$small-up} {
+			float: none;
+		}
+		@media #{$medium-up} {
+			float: left;
+		}
+		.sub-menu {
+		  display: none;
+			@media #{$small-up} {
+				padding-left: 14px;
+			}
+			@media #{$medium-up} {
+				padding-left: 0;
+				position: absolute;
+				background-color: #262626;
+			}
+			li {
+				float: none;
+			}
+		}
+		.sub-menu .sub-menu {
+				@media #{$medium-up} {
+					left: 100%;
+					margin-top: 0;
+					top: 0;
+				}
+		}
+		a {
+			padding: 10px;
+		}
+	}
+}
+.creative-layout {
+  .doors_mega-menu {
+    li {
+      padding-top : 15px;
+    }
+  }
+	.contain-to-grid, .top-bar {
+	  background: none repeat scroll 0 0 transparent;
+	  box-shadow: none;
+	  display: block;
+	  margin: 0 auto;
+	  position: relative;
+	  .top-bar .title-area .name h2 {
+	  	margin-top: 0;
+	  }
+	  @media #{$topbar-media-query} {
+	  	position: absolute;
+	  	.top-bar .title-area .name h2 {
+	  		margin-top: 45px;
+	  	}
+	  }
+	  width: 100%;
+	  z-index: 1001;
+	}
+	.top-bar {
+		position: relative;
+	}
+	//.top-bar-section ul {
+	//	background-color: transparent;
+	//}
+	.top-bar-section li:not(.has-form) a:not(.button) {
+	  padding: 0 35px;
+	}
+	.top-bar-section li:not(.has-form) a:hover:not(.button),
+  .top-bar-section ul li:hover:not(.has-form) > a {
+		background-color: transparent;
+	}
+	.top-bar-section ul li:hover:not(.has-form) > a	 {
+		color: #ccc;
+	}
+	.top-bar .toggle-topbar.menu-icon a span {
+		box-shadow: none;
+	}
+	.top-bar {
+		position: relative;
+	}
+	.top-bar-section ul li > a {
+		@media #{$small-up} {
+			color: #999;
+		}
+		@media #{$medium-up} {
+			color: #FFF;
+		}
+		font-size: 16px;
+	}
+	.top-bar-section ul li {
+		background-color: transparent;
+	}
+	.top-bar .title-area .name {
+    h2 {
+      color: #FFF;
+    }
+		@media #{$small-only} {
+			margin-top: 0;
+		}
+		margin-top: 20px;
+	}
+}
+.sub-menu {
+  display: none;
+}

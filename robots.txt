@@ -1,0 +1,72 @@
+User-agent: *               # общие правила для роботов, кроме Яндекса и Google, 
+
+Disallow: /cgi-bin          # папка на хостинге
+Disallow: /?                # все параметры запроса на главной
+Disallow: /wp-              # все файлы WP: /wp-json/, /wp-includes, /wp-content/plugins
+Disallow: /wp/
+Disallow: *?s=              # поиск
+Disallow: *&s=              # поиск
+Disallow: /search/          # поиск
+Disallow: /author/          # архив автора
+Disallow: /users/           # архив авторов
+Disallow: */trackback
+Disallow: */*/trackback
+Disallow: */feed            # все фиды
+Disallow: */rss             # rss фид
+Disallow: */embed           # все встраивания
+Disallow: */wlwmanifest.xml
+Disallow: /xmlrpc.php       # файл WordPress API
+Disallow: *utm=             # ссылки с utm-метками
+Disallow: *openstat=        # ссылки с метками openstat
+Disallow: /template.html
+Disallow: /wp-login.php
+Disallow: /wp-register.php
+Disallow: /wp-admin
+Disallow: /wp-includes
+Disallow: /wp-content/cache
+Disallow: *?add-to-cart=
+Disallow: /*?orderby=
+Allow: */uploads            # открываем папку с файлами uploads
+Allow: /wp-content/cache
+Allow: /wp-content/cache/min/
+Allow: /wp-content/uploads/
+
+User-agent: GoogleBot
+Disallow: /cgi-bin
+Disallow: /?
+Disallow: /wp-
+Disallow: /wp/
+Disallow: *?s=
+Disallow: *&s=
+Disallow: /search/
+Disallow: /author/
+Disallow: /users/
+Disallow: */trackback
+Disallow: */feed
+Disallow: */rss
+Disallow: */embed
+Disallow: */wlwmanifest.xml
+Disallow: /xmlrpc.php
+Disallow: *openstat=
+Disallow: /template.html
+Disallow: /wp-login.php
+Disallow: /wp-register.php
+Disallow: /wp-admin
+Disallow: /wp-includes
+Disallow: /wp-content/cache
+Disallow: *?add-to-cart=
+Disallow: /*?orderby=
+Allow: */uploads
+Allow: /*/*.js              # открываем js-скрипты внутри /wp- (/*/ - для приоритета)
+Allow: /*/*.css             # открываем css-файлы внутри /wp- (/*/ - для приоритета)
+Allow: /wp-*.png            # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.jpg            # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.jpeg           # картинки в плагинах, cache папке и т.д.
+Allow: /wp-*.gif            # картинки в плагинах, cache папке и т.д.
+Allow: /wp-admin/admin-ajax.php
+Allow: /wp-content/cache
+Allow: /wp-content/cache/min/
+Allow: /wp-content/uploads/
+
+Host: vigrand.mk.ua
+Sitemap: http://vigrand.mk.ua/sitemap.xml
